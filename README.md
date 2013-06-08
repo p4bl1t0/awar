@@ -2,6 +2,13 @@
 
 ###Introducción
 Analogía
+
+Que es?
+
+Por que?
+
+Legislación
+
 ###La ley explicada
 
  El Estado nacional, entiéndanse los tres poderes que lo constituyen, 
