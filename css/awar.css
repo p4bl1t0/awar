@@ -10,21 +10,27 @@ h3 {
 	margin:0.8em 0;
 }
 /*AWAr*/
+html, body, #main {
+    height:100%;
+}
+.section {
+    min-height:90%;
+}
 body {
 	color:#222;
 	font-family:'Ubuntu', Arial;
 }
 .flag {
 	margin-top:2.15em;
-	padding: 3em 0;
+	padding: 3.4em 0;
 	background:lightblue;
 	position:relative;
 }
 .flag-title {
-	background:white url('../images/sol-argentino-48.png') top center no-repeat;
-	background:white url('../images/sol-argentino.png') center center / 50px 50px no-repeat;
+	background:white url('../images/sol-argentino-48-0.65.png') top center no-repeat;
+	background:white url('../images/sol-argentino-0.65.png') center center / 50px 50px no-repeat;
 	margin:0;
-	font-size:2.6em;
+	font-size:3em;
 	text-align:center;
 }
 .flag-sun {
@@ -40,7 +46,7 @@ body {
 }
 .content .content-ribbon {
 	padding-top:2.5em;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid #BBB;
     margin: 3em;
 }
 .content-subhead {
