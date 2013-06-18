@@ -63,3 +63,7 @@ body {
 /*.content-subhead {
 	margin:0;
 }*/
+.image {
+	display: block;
+	margin: auto;
+}
