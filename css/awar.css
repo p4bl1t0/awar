@@ -7,14 +7,21 @@ h2 {
 }
 h3 {
 	font-size:1.3em;
-	margin:0.8em 0;
+	margin:1.2em 0 0.4em;
 }
 /*AWAr*/
 html, body, #main {
     height:100%;
+    background:#FCFCFC;
 }
 .section {
     min-height:90%;
+    max-width:967px;
+    font-size:110%;
+    line-height:1.5em;
+}
+.section p {
+    letter-spacing:1px;
 }
 body {
 	color:#222;
@@ -44,11 +51,15 @@ body {
 .l-box {
     padding: 0 1em;
 }
+.box-analogia p {
+    margin:0;
+}
 .content .content-ribbon {
 	padding-top:2.5em;
     border-bottom: 1px solid #BBB;
-    margin: 3em;
+    margin: 3em auto;
 }
-.content-subhead {
+
+/*.content-subhead {
 	margin:0;
-}
+}*/
