@@ -9,6 +9,9 @@ h3 {
 	font-size:1.3em;
 	margin:1.2em 0 0.4em;
 }
+.pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
+    color: #333333;
+}
 /*AWAr*/
 html, body, #main {
     height:100%;
@@ -89,5 +92,5 @@ summary:hover {
 	cursor:default;
 }
 #sujetos-alcanzados.details-supported {
-	list-style-type:none;
+	list-style:none none;
 }
