@@ -12,6 +12,9 @@ h3 {
 .pure-menu a, .pure-menu .pure-menu-can-have-children > li:after {
     color: #333333;
 }
+.pure-menu a img {
+    width:24px;
+}
 /*AWAr*/
 html, body, #main {
     height:100%;
