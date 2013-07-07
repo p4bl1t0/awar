@@ -67,3 +67,27 @@ body {
 	display: block;
 	margin: auto;
 }
+summary {
+	cursor:pointer;
+	border:1px solid transparent;
+	border-top:0;
+	border-left:0;
+}
+summary:hover {
+	border:1px solid black;
+	border-top:0;
+	border-left:0;
+}
+#sujetos-alcanzados {
+	list-style: url('../images/arrow.png') outside;
+}
+#sujetos-alcanzados ul {
+	list-style: circle none;
+}
+.details-unsupported  summary{
+	list-style-type:none;
+	cursor:default;
+}
+#sujetos-alcanzados.details-supported {
+	list-style-type:none;
+}
