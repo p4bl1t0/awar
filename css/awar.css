@@ -15,6 +15,9 @@ h3 {
 .pure-menu a img {
     width:24px;
 }
+.pure-g, .pure-g-r {
+  font-family:'Ubuntu', Arial; /*Posible correción de Bug*/
+}
 /*AWAr*/
 html, body, #main {
     height:100%;

@@ -10,7 +10,7 @@
 	</head>
 	<body class="content pure-g-r">
 		<div class="header pure-u-1">
-			<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+			<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal" style="min-width:1100px;">
 				<a class="pure-menu-heading" href="#"><abbr title="Accesibilidad Web en Argentina">AWAr</abbr></a>
 				<ul role="navigation">
 					<li><a href="#Intro">Introducción</a></li><!--class="pure-menu-selected"-->
@@ -440,6 +440,10 @@
 			<div class="section pure-g-r content-ribbon" id="Herramientas">
 				<div class="content l-box pure-u-1">
 					<h2>Herramientas para comprobar accesibilidad</h2>
+					<ul>
+					    <li><a id="add-bookmarklet" href="javascript:(function() {var _p='http://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();"><span class="screen-hide">HTML_CodeSniffer</span></a><a href=""></a>: Es un <i lang="en">bookmarklet</i> en JavaScript diseñado para autojecutarse sobre el marcado de una página y validarla con respecto a WCAG 2.0 (AA) o Section 508.<br />En este enlace está configurado para realizar la comprobación de las pautas WCAG 2.0. Para poder hacer uso del mismo, basta con guardarlo en favoritos y ejecutarlo sobre la página que se requiera comprobar.
+					    </li>
+					</ul>
 					<!--<ul>
 						<li>Validadores: WAVE (Webaim), HERA, TAG (TAW), HTML Code Sniffer</li>
 						<li>Color contrast checker</li>
@@ -447,20 +451,23 @@
 						<li>Lectores de pantalla</li>
 						<li>Holmes.css</li>
 					</ul>-->
-					<p>Pronto ...</p>
+					<p>Pronto más ...</p>
 				</div>
 			</div>
 			<div class="section pure-g-r content-ribbon" id="Colaborar">
 				<div class="content l-box pure-u-1">
 					<h2>Colaborar</h2>
-					<p>Colabora reportando errores o con más infromación en el  <a target="_blank" href="https://github.com/p4bl1t0/awar">repositorio de Github</a></p>
+					<p>Accesibilidad Web Argentina es un proyecto de Software Libre.</p>
+					<p>Se ha abierto un <a href="https://github.com/p4bl1t0/awar/issues/1"><i lang="en">issue</i> en Github para recibir los comentarios</a> acerca del sitio en general.</p>
+					<p>También se encuentra disponible la posibilidad de colaborar con el proyecto reportando errores, aportando más infromación o ayudandonós a armar el sitio desde el <a target="_blank" href="https://github.com/p4bl1t0/awar">repositorio de Github de AWAR</a>.</p>
+					
 				</div>
 			</div>
 			<div class="section pure-g-r content-ribbon" id="Acerca">
 				<div class="content l-box pure-u-1">
 					<h2>Acerca del proyecto</h2>
 					<p>Está página ha sido creada para aportar un granito de arena por Pablo Botta.</p>
-					<p>Actualmente el proyecto se encuentra en proceso de elaboración.</p>
+					<p>Actualmente el proyecto se encuentra en construcción.</p>
 					<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES"><img alt="Licencia de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Accesibilidad Web Argentina</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/p4bl1t0" property="cc:attributionName" rel="cc:attributionURL">Pablo Botta</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES">Creative Commons Reconocimiento-CompartirIgual 3.0 Unported License</a>.</p>
 				</div>
 			</div>
