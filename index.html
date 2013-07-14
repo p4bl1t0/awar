@@ -439,13 +439,33 @@
 			</div>
 			<div class="section pure-g-r content-ribbon" id="Herramientas">
 				<div class="content l-box pure-u-1">
-					<h2>Herramientas para comprobar accesibilidad</h2>
+					<h2>Herramientas para desarrollar accesible</h2>
+					<h3>Validadores de normas de accesibilidad</h3>
 					<ul>
-					    <li><a id="add-bookmarklet" href="javascript:(function() {var _p='http://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();"><span class="screen-hide">HTML_CodeSniffer</span></a><a href=""></a>: Es un <i lang="en">bookmarklet</i> en JavaScript diseñado para autojecutarse sobre el marcado de una página y validarla con respecto a WCAG 2.0 (AA) o Section 508.<br />En este enlace está configurado para realizar la comprobación de las pautas WCAG 2.0. Para poder hacer uso del mismo, basta con guardarlo en favoritos y ejecutarlo sobre la página que se requiera comprobar.
+					    <li>
+					    	<a id="add-bookmarklet" href="javascript:(function() {var _p='http://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();">HTML_CodeSniffer</a>: Es un <i lang="en">bookmarklet</i> en JavaScript diseñado para autojecutarse sobre el marcado de una página y validarla con respecto a WCAG 2.0 (AA) o Section 508.<br />En este enlace está configurado para realizar la comprobación de las pautas WCAG 2.0. Para poder hacer uso del mismo, basta con guardarlo en favoritos y ejecutarlo sobre la página que se requiera comprobar.
+					    </li>
+					    <li>
+					    	<a href="http://wave.webaim.org/">WAVE</a>: Es un comprobador de pautas WCAG 2.0 desarrollado por la organización <a href="http://webaim.org/"><abbr title="Web Accesibility In Mind">WebAIM</abbr></a>.
+					    </li>
+					    <li>
+					    	<a href="http://www.tawdis.net/">TAW</a>: Es una herramienta que verifica páginas Web utilizando las pautas WCAG 1.0 y 2.0. Este validador se encuentra desarrollado por la <a href="http://www.fundacionctic.org/">Fundación CTIC</a> y su principal ventaja es que se encuentra integramente en español.
 					    </li>
 					</ul>
+					<h3>Validadores de códigos</h3>
+					<ul>
+						<li>
+							<a href="http://validator.w3.org/" lang="en">W3C's Markup Validation Service</a>: El validador de marcado de la <abbr title="Consorcio World Wide Web">W3C</abbr> permite comprobar la correcta sintaxis (HTML4, HTML5, XHTML, SVG, entre otros lenguajes de marcado) de los distintos documentos presentes la Web. Una correcta sintaxis aumenta la interoperabilidad de la página.
+						</li>
+					    <li>
+					    	<a href="http://www.red-root.com/sandbox/holmes/" lang="en">Holmes The CSS Markup Detective</a>: Es una hoja de estilo que al añadirse a una página Web resalta los errores de marcado que existiesen en la misma. Valiendosé de selectores muy particulares de CSS para destacar elementos que no respeten los estándares Web.
+					    </li>
+						<li>
+							<a href="http://jigsaw.w3.org/css-validator/" lang="en">W3C's CSS Validation Service</a>: Verifica Hojas de Estilo en Cascada (CSS) y documentos (X)HTML con hojas de estilo enlazadas. La comprobación de la sintaxis de las hojas de estilos aumenta la robustez del sitio Web analizado, mejorando la interoperabilidad del mismo.
+						</li>
+					</ul>
 					<!--<ul>
-						<li>Validadores: WAVE (Webaim), HERA, TAG (TAW), HTML Code Sniffer</li>
+						<li>Validadores: WAVE (Webaim) => DONE, HERA, TAG (TAW) => DONE, HTML Code Sniffer => DONE</li>
 						<li>Color contrast checker</li>
 						<li>Simuladores de daltonia</li>
 						<li>Lectores de pantalla</li>
