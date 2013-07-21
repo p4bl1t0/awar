@@ -100,3 +100,11 @@ summary:hover {
 #sujetos-alcanzados.details-supported {
 	list-style:none none;
 }
+.anti-patterns .contra-ejemplo {
+    text-align:center;
+}
+.anti-patterns img {
+    max-width:90%;
+    display:block;
+    margin:0 auto .5em;
+}
