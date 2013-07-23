@@ -112,6 +112,13 @@ summary:hover {
     margin:0 auto .5em;
 	border:1px solid black;
 }
+hr {
+    margin: 0.8em 0 1.7em;
+}
+.fluid-video {
+    display:block;
+    margin:auto;
+}
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
