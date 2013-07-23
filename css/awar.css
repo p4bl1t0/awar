@@ -37,7 +37,7 @@ body {
 	font-family:'Ubuntu', Arial;
 }
 .flag {
-	margin-top:2.15em;
+	margin-top:1.15em;
 	padding: 3.4em 0;
 	background:lightblue;
 	position:relative;
@@ -69,9 +69,8 @@ body {
 .content .content-ribbon {
 	padding-top:2.5em;
     border-bottom: 1px solid #BBB;
-    margin: 3em auto;
+    margin: 0 auto 3em;
 }
-
 /*.content-subhead {
 	margin:0;
 }*/
@@ -129,4 +128,45 @@ summary:hover {
  */
 .cf {
     *zoom: 1;
+}
+/*Responsive Menu*/
+.ie .pure-menu{
+    min-width:1100px;
+}
+.modern-browser .pure-menu-fixed {
+    position: static;
+}
+.modern-browser .pure-menu li, 
+.modern-browser .pure-menu.pure-menu-horizontal > .pure-menu-heading, 
+.modern-browser .pure-menu.pure-menu-horizontal > ul  {
+    display:block;
+}
+.modern-browser .pure-menu.pure-menu-horizontal > ul {
+    height:auto;
+}
+.modern-browser .flag {
+	margin-top:0;
+}
+@media (min-width:600px) { 
+    .modern-browser .pure-menu-fixed {
+        position: fixed;
+    }
+    .modern-browser .pure-menu li, 
+    .modern-browser .pure-menu.pure-menu-horizontal > .pure-menu-heading  {
+        display: inline-block;
+    }
+    .modern-browser .pure-menu.pure-menu-horizontal > ul {
+        display:inline;
+    }
+    .modern-browser .flag {
+        margin-top:3.45em;
+    }
+}
+@media (min-width:1080px) { 
+    .modern-browser .pure-menu.pure-menu-horizontal > ul {
+        height:2.4em;
+    }
+    .modern-browser .flag {
+        margin-top:1.15em;
+    }
 }
