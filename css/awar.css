@@ -59,6 +59,9 @@ body {
 }
 .l-box {
     padding: 0 1em;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 .box-analogia p {
     margin:0;
@@ -102,9 +105,28 @@ summary:hover {
 }
 .anti-patterns .contra-ejemplo {
     text-align:center;
+	float:left;
 }
 .anti-patterns img {
     max-width:90%;
     display:block;
     margin:0 auto .5em;
+	border:1px solid black;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
