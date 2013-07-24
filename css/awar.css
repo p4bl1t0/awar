@@ -119,6 +119,13 @@ hr {
     display:block;
     margin:auto;
 }
+.social-links {
+    list-style-type: none;
+}
+.social-links li {
+    display: inline-block;
+    margin-left: 1em;
+}
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
