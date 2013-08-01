@@ -456,7 +456,7 @@
 					        <a href="http://www.anses.gob.ar">ANSES</a>
 					        <p>Presencia de <abbr lang="en" title="Completely Automated Public Turing test to tell Computers and Humans Apart">CAPTCHA</abbr> sin alternativa textual o auditiva.</p>
 					        <hr />
-					        <iframe id="ytplayer" class="fluid-video" type="text/html"  width="320" height="180"
+					        <iframe title="Video en Educ.ar sin subtítulo almacenado en Youtube" id="ytplayer" class="fluid-video" type="text/html"  width="320" height="180"
 src="https://www.youtube.com/embed/AmyLBajK25c?rel=0"
 frameborder="0" allowfullscreen></iframe>
 					        <a href="http://www.educ.ar/recursos/ver?rec_id=105158">Educ.ar</a>
@@ -487,7 +487,7 @@ frameborder="0" allowfullscreen></iframe>
 					<h3>Validadores de normas de accesibilidad</h3>
 					<ul>
 					    <li>
-					    	<a id="add-bookmarklet" href="javascript:(function() {var _p='http://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();">HTML_CodeSniffer</a>: Es un <i lang="en">bookmarklet</i> en JavaScript diseñado para autojecutarse sobre el marcado de una página y validarla con respecto a WCAG 2.0 (AA) o Section 508.<br />En este enlace está configurado para realizar la comprobación de las pautas WCAG 2.0. Para poder hacer uso del mismo, basta con guardarlo en favoritos y ejecutarlo sobre la página que se requiera comprobar.
+					    	<a id="add-bookmarklet" href="javascript:(function() {var _p='http://squizlabs.github.io/HTML_CodeSniffer/build/';var _i=function(s,cb) {var sc=document.createElement('script');sc.onload = function() {sc.onload = null;sc.onreadystatechange = null;cb.call(this);};sc.onreadystatechange = function(){if(/^(complete|loaded)$/.test(this.readyState) === true){sc.onreadystatechange = null;sc.onload();}};sc.src=s;if (document.head) {document.head.appendChild(sc);} else {document.getElementsByTagName('head')[0].appendChild(sc);}}; var options={path:_p};_i(_p+'HTMLCS.js',function(){HTMLCSAuditor.run('WCAG2AA',null,options);});})();">HTML_CodeSniffer</a>: Es un <i lang="en">bookmarklet</i> en JavaScript diseñado para autojecutarse sobre el marcado de una página y validarla con respecto a WCAG 2.0 (AA) o Section 508.<br />En este enlace está configurado para realizar la comprobación de las pautas WCAG 2.0. Para poder hacer uso del mismo, basta con guardarlo en favoritos y ejecutarlo sobre la página que se requiera comprobar. Puedes probarlo ahora mismo comprabandolo sobre el sitio de AWAR.
 					    </li>
 					    <li>
 					    	<a href="http://wave.webaim.org/">WAVE</a>: Es un comprobador de pautas WCAG 2.0 desarrollado por la organización <a href="http://webaim.org/"><abbr title="Web Accesibility In Mind">WebAIM</abbr></a>.
@@ -507,13 +507,29 @@ frameborder="0" allowfullscreen></iframe>
 						<li>
 							<a href="http://jigsaw.w3.org/css-validator/" lang="en">W3C's CSS Validation Service</a>: Verifica Hojas de Estilo en Cascada (CSS) y documentos (X)HTML con hojas de estilo enlazadas. La comprobación de la sintaxis de las hojas de estilos aumenta la robustez del sitio Web analizado, mejorando la interoperabilidad del mismo.
 						</li>
+						<!---->
+					</ul>
+					<h3>Otras herramientas</h3>
+					<ul>
+						<li>
+							<a href="http://accessify.com/tools-and-wizards/accessibility-tools/quick-form-builder/" lang="en">Quick Form Builder</a>: Es un <i lang="en">wizard</i> para generar formularios HTML accesibles. Esta herramienta puede ser de utilidad para observar como debe marcarse accesiblemente un formulario.
+						</li>
+						<li>
+							<a href="javascript:(function(){var i=function(a){this.sections=[];this.startingNode=a};i.prototype={heading:false,append:function(a){a.container=this;this.sections.push(a)},asHTML:function(a){var b=u(this.heading);if(a)b='&lt;a href=&quot;#'+v(this.startingNode)+'&quot;&gt;'+b+&quot;&lt;/a&gt;&quot;;return b+q(this.sections,a)}};var q=function(a,b){for(var f=&quot;&quot;,c=0;c&lt;a.length;c++)f+=&quot;&lt;li&gt;&quot;+a[c].asHTML(b)+&quot;&lt;/li&gt;&quot;;return f==&quot;&quot;?f:&quot;&lt;ol&gt;&quot;+f+&quot;&lt;/ol&gt;&quot;},r=function(a){a=a.heading;return h(a)?j(a):1},u=function(a){if(h(a)){if(k(a)==&quot;HGROUP&quot;)a=a.getElementsByTagName(&quot;h&quot;+
+-j(a))[0];return a.textContent||a.innerText||&quot;&lt;i&gt;No text content inside &quot;+a.nodeName+&quot;&lt;/i&gt;&quot;}return&quot;&quot;+a},v=function(a){var b=a.getAttribute(&quot;id&quot;);if(b)return b;do b=&quot;h5o-&quot;+ ++s;while(t.getElementById(b));a.setAttribute(&quot;id&quot;,b);return b},e,d,g,s,t,w=function(a,b,f){var c=a;a:for(;c;){b(c);if(c.firstChild){c=c.firstChild;continue a}for(;c;){f(c);if(c.nextSibling){c=c.nextSibling;continue a}c=c==a?null:c.parentNode}}},x=function(a){if(!h(o(g)))if(l(a)||m(a)){e!=null&amp;&amp;g.push(e);e=a;d=new i(a);e.outline=
+{sections:[d],startingNode:a,asHTML:function(c){return q(this.sections,c)}}}else if(e!=null)if(h(a)){if(d.heading)if(j(a)&gt;=r(n(e.outline))){var b=new i(a);e.outline.sections.push(b);d=b;d.heading=a}else{b=false;var f=d;do{if(j(a)&lt;r(f)){b=new i(a);f.append(b);d=b;d.heading=a;b=true}f=f.container}while(!b)}else d.heading=a;g.push(a)}},y=function(a){var b=o(g);if(h(b))b==a&amp;&amp;g.pop();else{if((l(a)||m(a))&amp;&amp;!d.heading)d.heading=&quot;&lt;i&gt;Untitled &quot;+k(a)+&quot;&lt;/i&gt;&quot;;if(l(a)&amp;&amp;g.length&gt;0){e=g.pop();d=n(e.outline);for(b=
+0;b&lt;a.outline.sections.length;b++)d.append(a.outline.sections[b])}else if(m(a)&amp;&amp;g.length&gt;0){e=g.pop();for(d=n(e.outline);d.sections.length&gt;0;)d=n(d)}else if(l(a)||m(a))d=e.outline.sections[0]}},k=function(a){return a.tagName.toUpperCase()},p=function(a){return function(b){return z(b)&amp;&amp;(new RegExp(a,&quot;i&quot;)).test(k(b))}},m=p(&quot;^BLOCKQUOTE|BODY|DETAILS|FIELDSET|FIGURE|TD$&quot;),l=p(&quot;^ARTICLE|ASIDE|NAV|SECTION$&quot;),h=p(&quot;^H[1-6]|HGROUP$&quot;),z=function(a){return a&amp;&amp;a.tagName},j=function(a){var b=k(a);if(b==&quot;HGROUP&quot;)for(b=
+1;b&lt;=6;b++){if(a.getElementsByTagName(&quot;H&quot;+b).length&gt;0)return-b}else return-parseInt(b.substr(1))},n=function(a){return o(a.sections)},o=function(a){return a[a.length-1]};HTML5Outline=function(a){s=0;t=a.ownerDocument||window.document;d=e=null;g=[];w(a,x,y);return e!=null?e.outline:null}})();
+;(function(){var b=function(e,f){for(var d=0;d&lt;e.length;d++)e[d].setAttribute(&quot;style&quot;,f)},g=HTML5Outline(document.body).asHTML(true),a=document.createElement(&quot;div&quot;);b([a],&quot;position:fixed;top:10px;right:10px;border:2px solid #000;background:rgba(255,255,255,.9);padding:15px;z-index:999;max-height:400px;overflow:auto;font-size:11px;font-family:Verdana, sans-serif;&quot;);a.innerHTML=g;b(a.getElementsByTagName(&quot;li&quot;),&quot;list-style:decimal outside;margin-left:20px;font-size:11px;font-family:Verdana, sans-serif;&quot;);
+b(a.getElementsByTagName(&quot;ol&quot;),&quot;margin: 0;padding:0;font-size:11px;font-family:Verdana, sans-serif;&quot;);b(a.getElementsByTagName(&quot;a&quot;),&quot;color:#008;text-decoration:underline;font-size:11px;font-family:Verdana, sans-serif;&quot;);var c=a.insertBefore(document.createElement(&quot;a&quot;),a.firstChild);b([c],&quot;float: right; margin: 0 0 5px 5px; padding: 5px; border: 1px #008 solid;color:#00f;background-color:#ccf;&quot;);c.innerHTML=&quot;Close&quot;;c.href=&quot;#&quot;;c.onclick=function(){document.body.removeChild(a);a=c=null};document.body.appendChild(a)})();
+">HTML5 Outliner</a>: Es un <i lang="en">bookmarklet</i> que genera el árbol de navegación del documento de la página web sobre la cual se está ejecutando. Sirve para verificar el correcto añidamiento de los encabezados dentro de nuestro sitio. Para poder hacer uso del mismo, basta con guardarlo en favoritos y ejecutarlo sobre la página que se requiera comprobar. Puedes probarlo ahora mismo comprabandolo sobre el sitio de AWAR.
+						</li>
 					</ul>
 					<!--<ul>
-						<li>Validadores: WAVE (Webaim) => DONE, HERA, TAG (TAW) => DONE, HTML Code Sniffer => DONE</li>
+						<li>Validadores: HERA</li>
 						<li>Color contrast checker</li>
 						<li>Simuladores de daltonia</li>
 						<li>Lectores de pantalla</li>
-						<li>Holmes.css</li>
 					</ul>-->
 					<h3>Recursos bibliográficos (desgraciadamente en su totalidad en inglés)</h3>
 					<ul>
